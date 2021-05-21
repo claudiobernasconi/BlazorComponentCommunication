@@ -1,0 +1,9 @@
+﻿<div style="padding: 20px; width: 300px; display: flex; flex-direction: column; border: 1px solid #808080;">
+    <div>Name: @User.Name</div>
+    <div>Username: @User.Username</div>
+</div>
+
+@code {
+    [CascadingParameter]
+    public UserModel User { get; set; }
+}

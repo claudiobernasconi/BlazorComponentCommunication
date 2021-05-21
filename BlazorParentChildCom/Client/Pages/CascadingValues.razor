@@ -1,0 +1,20 @@
+﻿@page "/cascading-values"
+
+<h2>User</h2>
+
+<CascadingValue Value="User">
+    <UserSettings />
+</CascadingValue>
+
+@code {
+    public UserModel User { get; }
+
+    public CascadingValues()
+    {
+        User = new UserModel
+        {
+            Name = "Claudio Bernasconi",
+            Username = "claudiobernasconi"
+        };
+    }
+}

@@ -1,31 +1,8 @@
 ﻿@page "/"
+@inject NavigationManager NavigationManager
 
-<h1>Cars</h1>
-<table>
-    <thead>
-        <tr>
-            <td style="width: 100px;"><b>Make</b></td>
-            <td style="width: 140px;"><b>Model</b></td>
-            <td style="width: 80px;">&nbsp;</td>
-        </tr>
-    </thead>
-    <tbody>
-        @foreach (var car in Cars)
-        {
-            <CarItem Car="@car" DeleteItem="@DeleteCar" />
-        }
-    </tbody>
-</table>
-
-@code {
-    private IList<CarModel> Cars = new List<CarModel> {
-        new CarModel { Make = "Ford", Model = "Mustang" },
-        new CarModel { Make = "BMW", Model = "M5" },
-        new CarModel { Make = "Audi", Model = "R6" },
-    };
-
-    public void DeleteCar(CarModel car)
-    {
-        Cars.Remove(car);
-    }
-}
+<h1>Parent-Child Component Communication in Blazor</h1>
+<ul>
+    <li><a href="/event-callbacks">EventCallbacks</a></li>
+    <li><a href="/cascading-values">Cascading Values</a></li>
+</ul>
