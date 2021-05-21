@@ -1,0 +1,13 @@
+﻿<tr>
+    <td>@Car.Make</td>
+    <td>@Car.Model</td>
+    <td><a href="" @onclick="() => DeleteItem.InvokeAsync(Car)">Delete</a></td>
+</tr>
+
+@code {
+    [Parameter]
+    public CarModel Car { get; set; }
+
+    [Parameter]
+    public EventCallback<CarModel> DeleteItem { get; set; }
+}
