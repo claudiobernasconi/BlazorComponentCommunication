@@ -1,0 +1,27 @@
+﻿@page "/state-container"
+@inject AppState AppState
+
+<h3>Animals</h3>
+Favorite animal: @AppState.FavoriteAnimal
+
+<div style="display: flex; flex-direction: column; width: 200px;">
+    <Lion />
+    <Snake />
+    <button @onclick='() => AppState.SetFavoriteAnimal("Elephant")'>
+        Reset
+    </button>
+</div>
+
+@code
+{
+    protected override void OnInitialized()
+    {
+        AppState.OnFavoriteAnimalChange += StateHasChanged;
+        AppState.SetFavoriteAnimal("Elephant");
+    }
+
+    public void Dispose()
+    {
+        AppState.OnFavoriteAnimalChange -= StateHasChanged;
+    }
+}
