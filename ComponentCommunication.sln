@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31313.79
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BlazorParentChildCom.Client", "BlazorParentChildCom\Client\BlazorParentChildCom.Client.csproj", "{21657EC8-7A8A-4AEE-AB8A-D5EA0AC6003F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ComponentCommunication.Client", "ComponentCommunication\Client\ComponentCommunication.Client.csproj", "{21657EC8-7A8A-4AEE-AB8A-D5EA0AC6003F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

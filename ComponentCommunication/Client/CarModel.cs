@@ -1,4 +1,4 @@
-﻿namespace BlazorParentChildCom.Client
+﻿namespace ComponentCommunication.Client
 {
     public class CarModel
     {

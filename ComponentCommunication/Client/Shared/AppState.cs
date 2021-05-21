@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace BlazorParentChildCom.Client.Shared
+namespace ComponentCommunication.Client.Shared
 {
     public class AppState
     {

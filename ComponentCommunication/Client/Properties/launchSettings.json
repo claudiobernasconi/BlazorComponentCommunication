@@ -16,7 +16,7 @@
         "ASPNETCORE_ENVIRONMENT": "Development"
       }
     },
-    "BlazorParentChildCom": {
+    "ComponentCommunication": {
       "commandName": "Project",
       "dotnetRunMessages": "true",
       "launchBrowser": true,
